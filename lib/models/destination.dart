@@ -1,4 +1,5 @@
 class Destination {
+  int id;
   String image;
   String name;
   double rating;
@@ -9,6 +10,7 @@ class Destination {
   String timing;
 
   Destination({
+    required this.id,
     required this.image,
     required this.name,
     required this.rating,
@@ -18,4 +20,6 @@ class Destination {
     this.duration = 5,
     this.timing = "9 am to 10 pm",
   });
+
+  String get path => "assets/images/$image";
 }

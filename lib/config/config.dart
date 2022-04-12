@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:travelapp/models/category.dart';
 import 'package:travelapp/models/destination.dart';
+import 'package:travelapp/models/nav_item.dart';
 
 class TravelTheme {
   static const Color scaffoldBackgroundColor = Color(0xFFEBF2FC);
@@ -65,13 +66,15 @@ class TravelConfig {
 
   static List<Destination> destinations = [
     Destination(
-      image: "paris.jpeg",
+      id: 1,
+      image: "disneyland.jpeg",
       name: "Disney Land",
       rating: 4.8,
       location: "California",
       price: 120,
     ),
     Destination(
+      id: 2,
       image: "pacific-park.jpeg",
       name: "Pacific Park",
       rating: 4.3,
@@ -79,11 +82,39 @@ class TravelConfig {
       price: 99,
     ),
     Destination(
+      id: 3,
       image: "eiffel-tower.jpeg",
       name: "Eiffel Tower",
       rating: 4.9,
       location: "Paris",
       price: 120,
+    ),
+  ];
+
+  static List<NavigationItem> navItems = [
+    NavigationItem(
+      id: 0,
+      filled: const Icon(Icons.home),
+      outlined: const Icon(Icons.home_outlined),
+      title: "Home",
+    ),
+    NavigationItem(
+      id: 1,
+      filled: const Icon(Icons.notifications),
+      outlined: const Icon(Icons.notifications_outlined),
+      title: "Updates",
+    ),
+    NavigationItem(
+      id: 2,
+      filled: const Icon(Icons.favorite),
+      outlined: const Icon(Icons.favorite_border_outlined),
+      title: "Favorites",
+    ),
+    NavigationItem(
+      id: 3,
+      filled: const Icon(Icons.person),
+      outlined: const Icon(Icons.person_outline),
+      title: "Profile",
     ),
   ];
 }
