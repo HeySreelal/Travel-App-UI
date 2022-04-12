@@ -44,6 +44,56 @@ class HomeState extends State<Home> {
                 TuneButton(),
               ],
             ),
+            const SizedBox(height: 18),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: TravelConfig.categories
+                    .map(
+                      (e) => Card(
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Row(
+                            children: [
+                              Image.asset(
+                                e.path,
+                                height: 40,
+                              ),
+                              const SizedBox(width: 10),
+                              Text(
+                                e.name,
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    )
+                    .toList(),
+              ),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                Expanded(
+                  child: Text(
+                    "Popular",
+                    style: Theme.of(context).textTheme.headline4?.copyWith(
+                          color: TravelTheme.black,
+                          fontWeight: FontWeight.w600,
+                        ),
+                  ),
+                ),
+                const Text(
+                  "View All",
+                  style: TextStyle(
+                    color: TravelTheme.darkGrey,
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),

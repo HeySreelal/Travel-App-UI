@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:travelapp/models/category.dart';
+import 'package:travelapp/models/destination.dart';
 
 class TravelTheme {
   static const Color scaffoldBackgroundColor = Color(0xFFEBF2FC);
@@ -35,4 +37,53 @@ class TravelTheme {
           color: black,
         ),
       );
+}
+
+class TravelConfig {
+  static List<Category> categories = [
+    Category(
+      name: 'Theme Park',
+      image: 'ThemePark.png',
+    ),
+    Category(
+      name: 'Pub & Club',
+      image: 'disco.png',
+    ),
+    Category(
+      name: 'Cafes',
+      image: 'cafe.png',
+    ),
+    Category(
+      name: 'Concerts',
+      image: 'rock-and-roll.png',
+    ),
+    Category(
+      name: 'Activities',
+      image: 'camping-tent.png',
+    ),
+  ];
+
+  static List<Destination> destinations = [
+    Destination(
+      image: "paris.jpeg",
+      name: "Disney Land",
+      rating: 4.8,
+      location: "California",
+      price: 120,
+    ),
+    Destination(
+      image: "pacific-park.jpeg",
+      name: "Pacific Park",
+      rating: 4.3,
+      location: "California",
+      price: 99,
+    ),
+    Destination(
+      image: "eiffel-tower.jpeg",
+      name: "Eiffel Tower",
+      rating: 4.9,
+      location: "Paris",
+      price: 120,
+    ),
+  ];
 }
