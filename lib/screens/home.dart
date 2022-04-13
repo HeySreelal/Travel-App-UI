@@ -252,9 +252,9 @@ class PopularCard extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 10),
-            const Text(
-              "Disney Land",
-              style: TextStyle(
+            Text(
+              destination.name,
+              style: const TextStyle(
                 fontSize: 20,
                 color: TravelTheme.darkGrey,
                 fontWeight: FontWeight.bold,
