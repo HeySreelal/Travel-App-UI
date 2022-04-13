@@ -10,6 +10,7 @@ class TravelTheme {
   static const Color darkGrey = Color(0xFF878787);
   static const Color white = Colors.white;
   static const Color black = Colors.black;
+  static const Color ratingYellow = Color(0xFFE9CB53);
   static ThemeData get theme => ThemeData(
         primaryColor: primaryColor,
         colorScheme: const ColorScheme.light(

@@ -22,4 +22,8 @@ class Destination {
   });
 
   String get path => "assets/images/$image";
+
+  void updateFav() {
+    isFavourite = !isFavourite;
+  }
 }
