@@ -1,7 +1,7 @@
 # Travel App UI
 [![](https://img.shields.io/badge/FlutterEveryday-Day%205-blue.svg)](https://github.com/HeySreelal/Flutter-Everyday)
 
-On the fourth day, I've done this Shoes Store UI by [@sonali.ui](https://www.instagram.com/sonali.ui/).
+Travel App UI by [@sonali.ui](https://www.instagram.com/sonali.ui/).
 
 
 ## 🦄 Design 
